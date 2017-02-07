@@ -30,7 +30,7 @@ weave.SetBinderYarnHeights( 0.1 )
 P = [[0, 1, 3, 0],[3, 0, 0, 3]]
 
 #assign the z-positions to the binder yarns
-for y in range(nwarp,NumXYarns): #loop through number of binder yarns
+for y in range(NumWarpYarns,NumXYarns): #loop through number of binder yarns
 	offset = 0 
 	for x in range(0,NumYYarns): #loop through the node positions	
 		weave.SetBinderPosition(x, y, P[y-NumWarpYarns][offset])
