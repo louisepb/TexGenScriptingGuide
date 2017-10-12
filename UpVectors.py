@@ -12,5 +12,7 @@ yarn.AddNode( CNode( XYZ(0.50, 3,  0),   XYZ(0,-1,0),  XYZ(0, 0, 1) ) )
 yarn.AddNode( CNode( XYZ(0.00, 1,  0),   XYZ(0,-1,0),  XYZ(0, 0, 1) ) )
 yarn.AddNode( CNode( XYZ(0.00, 1, -5),   XYZ(0,0,-1),  XYZ(0,-1,0) ) ) 
 
-textile.AddYarn( yarn )           
+# Add nodes to the yarn
+textile.AddYarn( yarn )     
+# Add the textile to the TexGen database     
 AddTextile( "demo", textile )  
