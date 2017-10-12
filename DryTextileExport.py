@@ -21,7 +21,7 @@ tension.AddScale( 1.1, 1, 1)
 
 # Setup class which generates ABAQUS files with conformal wedge/hex elements
 deformer = CSimulationAbaqus()  
-deformer.SetIncludePlates( True )  # Whether or not to include compression plates
+deformer.SetIncludePlates( False )  # Whether or not to include compression plates
 deformer.AddDeformationStep(tension)
 
 fName = 'ExportDry'
