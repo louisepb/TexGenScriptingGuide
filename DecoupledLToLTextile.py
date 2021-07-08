@@ -1,4 +1,4 @@
-import math
+# DecoupledLToLTextile.py
 
 #Set up 3D Weave textile
 numBinderLayers = 2
@@ -14,11 +14,11 @@ Textile = CTextileDecoupledLToL( numXYarns, numWefts, warpSpacing, weftSpacing, 
 
 #set number of binder / warp yarns
 NumBinderYarns = 2
-#NumWarpYarns = NumXYarns - NumBinderYarns
+
 BinderRatio = 1
 WarpRatio = 1
-Textile.SetWarpRatio( 1 )
-Textile.SetBinderRatio( 1 )
+Textile.SetWarpRatio( WarpRatio )
+Textile.SetBinderRatio( BinderRatio )
 
 # Set up layers: 2 warp, 3 weft
 Textile.SetupLayers( 2, 3, numBinderLayers)
