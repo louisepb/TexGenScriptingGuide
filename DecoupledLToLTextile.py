@@ -1,5 +1,8 @@
 # DecoupledLToLTextile.py
 
+# Python 3 version used runpy module to execute scripts from TexGen GUI which requires import of library
+from TexGen.Core import *
+
 #Set up 3D Weave textile
 numBinderLayers = 2
 numXYarns = 4
@@ -56,14 +59,16 @@ repeat = BinderRatio + WarpRatio
 for z in range(NumBinderYarns):
     # Loop through the weft stacks
     for x in range( numWefts ):
-        list=[]
+        zOffsets = IntVector()
+        
         # Loop through binder layers
         for y in range( numBinderLayers):
-            list.append(binderYarns[z][y][x])
+            zOffsets.push_back(int(binderYarns[z][y][x]))
+            
         # Calculate the binder y position (ie warp yarn index)
         ind = z/BinderRatio
         BinderIndex = WarpRatio + (ind * repeat) + z%BinderRatio
-        Textile.SetBinderPosition(x, BinderIndex, list)
+        Textile.SetBinderPosition(x, int(BinderIndex), zOffsets)
 
 Textile.SetWeftRepeat( True )
 Textile.AssignDefaultDomain( )

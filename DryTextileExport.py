@@ -2,6 +2,9 @@
 # Generates conformal mesh of just the yarns and
 # creates ABAQUS input file
 
+# Python 3 version used runpy module to execute scripts from TexGen GUI which requires import of library
+from TexGen.Core import *
+
 textile = GetTextile()
 weave = textile.GetWeave()
 

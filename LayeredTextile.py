@@ -1,3 +1,6 @@
+# Python 3 version used runpy module to execute scripts from TexGen GUI which requires import of library
+from TexGen.Core import *
+
 #Create a plain weave textile
 t = 0.1 #layer thickness
 weave = CTextileWeave2D( 2, 2, 0.8, t, True )

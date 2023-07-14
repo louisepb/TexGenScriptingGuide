@@ -1,5 +1,8 @@
 # VolumeMeshExport.py
 
+# Python 3 version used runpy module to execute scripts from TexGen GUI which requires import of library
+from TexGen.Core import *
+
 # Specify weave parameters
 nwarp=2   #Number of weft yarns in the unit cell
 nweft=2    #Number of warp yarns in the unit cell

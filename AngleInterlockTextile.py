@@ -1,3 +1,6 @@
+# Python 3 version used runpy module to execute scripts from TexGen GUI which requires import of library
+from TexGen.Core import *
+
 # Setup angle interlock textile with 3 warp yarns, 6 weft
 # x and y spacing 1.5 and 1.0 respectively
 # x and y yarn heights both 0.1

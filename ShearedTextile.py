@@ -1,3 +1,7 @@
+# Python 3 version used runpy module to execute scripts from TexGen GUI which requires import of library
+from TexGen.Core import *
+from math import *
+
 # Create a 4x4 2d woven textile with yarn spacing of 5 and thickness 2
 # The fourth parameter is the shear angle in radians
 # The sixth parameter indicates whether to refine the textile to avoid intersections

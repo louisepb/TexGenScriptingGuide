@@ -3,6 +3,9 @@
 # and export the voxel mesh as an ABAQUS .inp file
 # with periodic boundary conditions
 
+# Python 3 version used runpy module to execute scripts from TexGen GUI which requires import of library
+from TexGen.Core import *
+
 # Create a yarn with repeats and add to a textile
 textile = CTextile( )
 

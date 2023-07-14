@@ -1,5 +1,8 @@
 # SingleYarn.py
 
+# Python 3 version used runpy module to execute scripts from TexGen GUI which requires import of library
+from TexGen.Core import *
+
 #Create an object of the CTextile class 
 textile = CTextile( )
 
